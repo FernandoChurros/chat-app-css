@@ -4,14 +4,75 @@
    grid-gap: .8rem;
 
    background-color: hsl(270, 20%, 96%);
-   border-radius: 0 0 35px 35px;
+   border-radius: 0 0;
 
    padding: 1rem;
 }
 
 .msg {
-   border: 1px solid #000;
+   padding: .8rem;
+}
+
+.msg_receive {
+   background-color: var(--grayish-blue);
+   border-radius: 20px 20px 20px 5px;
+   color: var(--moderate-violet);
+   align-self: flex-start;
+}
+
+.msg_send {
+   background-color: var(--white);
+   border-radius: 20px 20px 5px;
+   color: var(--desaturated-dark-violet);
+   align-self: flex-end;
+}
+
+.msg_send_photo {
+   display: flex;
+   flex-flow: row wrap;
+   align-self: flex-end;
+   max-width: calc(62px * 3 + 9px);
+}
+
+.msg_photo {
+   border-radius: 10px;
+   width: 62px;
+}
+
+.msg_send_photo .msg_photo {
+   margin-right: 3px;
+   margin-bottom: 3px;
+}
+
+.msg_receive_price {
+   display: flex;
+   background: linear-gradient(to right, var(--light-magenta), var(--light-violet));
+   color: var(--white);
    width: 230px;
-   border-radius: 20px;
-   padding: .5rem;
+   grid-gap: .5rem;
+}
+
+.msg_receive_price > span {
+   display: inline-flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 200px;
+}
+
+.msg_price {
+   font-size: 22px;
+}
+
+/* PSEUDO CLASSES E ELEMENTOS */
+
+.msg:not(.msg_receive_price):not(.msg_send_photo) {
+   max-width: 190px;
+}
+
+.msg_send_photo .msg_photo:last-child {
+   margin-right: 0;
+}
+
+.msg_receive_price::before {
+   content: url("../../images/icons/check_circle_white_24dp.svg");
 }

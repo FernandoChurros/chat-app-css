@@ -1,4 +1,5 @@
 :root {
+   --white: #FFF;
    --pale-violet: hsl(276, 100%, 81%); /* (sub-heading at the top of the app UI) */
    --moderate-violet: hsl(276, 55%, 52%); /* (chat on the left) */
    --desaturated-dark-violet: hsl(271, 15%, 43%); /* (chat on the right) */
@@ -9,4 +10,19 @@
    /* LINEAR GRADIENTS */
    --light-magenta: hsl(293, 100%, 63%);
    --light-violet: hsl(264, 100%, 61%);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+input,
+button {
+   box-sizing: border-box;
+   border: 0;
+}
+
+div {
+   box-sizing: inherit;
 }

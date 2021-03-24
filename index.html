@@ -9,8 +9,8 @@
 
    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/base.css">
@@ -18,11 +18,12 @@
    <link rel="stylesheet" href="./css/app_chat/app_chat.css">
    <link rel="stylesheet" href="./css/app_chat/app_chat_heading.css">
    <link rel="stylesheet" href="./css/app_chat/app_msg.css">
+   <link rel="stylesheet" href="./css/send_msg.css">
 </head>
 
 <body style="font-family: 'Rubik', sans-serif;">
    <main>
-      <div class="wrapper_app_chat">
+      <div id="wrapper_app_chat" class="wrapper_app_chat">
          <div class="ornamento_top"></div>
          <div class="app_chat">
             <div class="app_chat_heading">
@@ -37,37 +38,46 @@
             </div>
 
             <div class="app_msg">
-               <div class="msg">
+               <div class="msg msg_receive">
                   <span>That sounds great. I’d be happy with that.</span>
                </div>
-               <div class="msg">
+
+               <div class="msg msg_receive">
                   <span>Could you send over some pictures of your dog, please?</span>
                </div>
 
-               <div class="msg">
+               <div class="msg msg_send_photo">
+                  <img class="msg_photo" src="./images/dog-image-1.jpg" alt="">
+                  <img class="msg_photo" src="./images/dog-image-2.jpg" alt="">
+                  <img class="msg_photo" src="./images/dog-image-3.jpg" alt="">
+               </div>
+
+               <div class="msg msg_send">
                   <span>Here are a few pictures. She’s a happy girl!</span>
                </div>
 
-               <div class="msg">
+               <div class="msg msg_send">
                   <span>Can you make it?</span>
                </div>
 
-               <div class="msg">
+               <div class="msg msg_receive">
                   <span>She looks so happy! The time we discussed works. How long shall I take her out for?</span>
                </div>
 
-               <div class="msg">
-                  <span>30 minute walk $129</span>
+               <div class="msg msg_receive msg_receive_price">
+                  <span>30 minute walk <span class="msg_price">$29</span></span>
                </div>
 
-               <div class="msg">
-                  <span>1 hour walk $149</span>
-               </div>
-
-               <div class="msg">
-                  <span>Type a message…</span>
+               <div class="msg msg_receive msg_receive_price">
+                  <span>1 hour walk <span class="msg_price">$49</span></span>
                </div>
             </div>
+
+            <form class="send_msg">
+               <input class="send_msg_input" name="send_msg" type="text" placeholder="Type a message…">
+
+               <button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg></button>
+            </form>
          </div>
       </div>
    </main>
