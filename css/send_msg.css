@@ -1,12 +1,29 @@
 .send_msg {
    display: flex;
+   justify-content: center;
    background-color: hsl(270, 20%, 96%);
    border-radius:  0 0 35px 35px;
+   padding: 1rem 0;
+}
+
+.send_msg_input {
+   background-color: var(--white);
+   border-radius: 150px 0 0 150px;
+   padding: 1rem;
+   width: 80%;
 }
 
 .btn {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   background-color: var(--white);
+   border-radius: 0 150px 150px 0;
+   width: 48px;
+}
+
+.btn > svg {
    background-color: #000;
    border-radius: 50%;
-   width: 40px;
-   height: 40px;
+   margin-right: .2rem;
 }
