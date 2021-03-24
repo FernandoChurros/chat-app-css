@@ -16,3 +16,21 @@
    left: 50%;
    transform: translateX(-50%);
 }
+
+@media screen and (max-width: 410px) {
+   .wrapper_app_chat {
+      margin: 3rem .8rem 0;
+   }
+}
+
+@media screen and (min-width: 411px) and (max-width: 1000px) {
+   .wrapper_app_chat {
+      margin: 3rem auto 0;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   .wrapper_app_chat {
+      width: 400px;
+   }
+}

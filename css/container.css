@@ -1,0 +1,9 @@
+@media screen and (min-width: 1150px) {
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 15rem;
+      height: 100vh;
+   }
+}

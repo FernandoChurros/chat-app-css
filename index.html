@@ -3,6 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
+   <meta name="author" content="Fernando Churros">
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -14,15 +15,17 @@
 
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/base.css">
+   <link rel="stylesheet" href="./css/container.css">
    <link rel="stylesheet" href="./css/app_chat/wrapper_app_chat.css">
    <link rel="stylesheet" href="./css/app_chat/app_chat.css">
    <link rel="stylesheet" href="./css/app_chat/app_chat_heading.css">
    <link rel="stylesheet" href="./css/app_chat/app_msg.css">
    <link rel="stylesheet" href="./css/send_msg.css">
+   <link rel="stylesheet" href="./css/description.css">
 </head>
 
 <body style="font-family: 'Rubik', sans-serif;">
-   <main>
+   <main class="container">
       <div class="wrapper_app_chat">
          <div class="ornamento_top"></div>
          <div class="app_chat">
@@ -76,18 +79,19 @@
             <form class="send_msg">
                <input class="send_msg_input" name="send_msg" type="text" placeholder="Type a message…">
 
-               <button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg></button>
+               <button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#FFFFFF">
+                     <path d="M0 0h24v24H0V0z" fill="none" />
+                     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" /></svg></button>
             </form>
          </div>
       </div>
-   </main>
-   <!--
-  Simple booking
 
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
--->
+      <div class="description">
+         <h1 class="title_description">Simple booking</h1>
+
+         <p class="paragrafo">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+      </div>
+   </main>
 </body>
 
 </html>
