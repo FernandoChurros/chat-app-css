@@ -1,0 +1,10 @@
+body {
+   background-color: #000;
+   margin: 2rem;
+}
+
+.app_chat {
+   background-color: #FFF;
+   border: 15px solid #FFF;
+   border-radius: 35px;
+}

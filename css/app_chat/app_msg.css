@@ -1,0 +1,17 @@
+.app_msg {
+   display: flex;
+   flex-direction: column;
+   grid-gap: .8rem;
+
+   background-color: hsl(270, 20%, 96%);
+   border-radius: 0 0 35px 35px;
+
+   padding: 1rem;
+}
+
+.msg {
+   border: 1px solid #000;
+   width: 230px;
+   border-radius: 20px;
+   padding: .5rem;
+}

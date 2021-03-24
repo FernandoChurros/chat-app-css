@@ -1,0 +1,41 @@
+.app_chat_heading {
+   background: linear-gradient(to right, var(--light-violet) 0% 50%, var(--light-magenta) 80% 100%);
+   color: #FFF;
+   padding: 1rem;
+   border-radius: 35px 35px 5px 5px;
+}
+
+.heading_infos {
+   display: flex;
+   align-items: center;
+
+   margin-top: 1.5rem;
+}
+
+.heading_avatar {
+   border: 2px solid #FFF;
+   border-radius: 50%;
+   width: 38px;
+   margin-right: .8rem;
+}
+
+.name_heading {
+   font-size: .9rem;
+   display: block; 
+}
+
+.status_heading {
+   font-size: .6rem;
+}
+
+/* PSEUDO CLASSES E ELEMENTOS */
+
+.heading_infos::before {
+   content: url("../../images/icons/arrow_left_white_36dp.svg");
+   width: max-content;
+}
+
+.heading_infos::after {
+   content: url("../../images/icons/drag_indicator_white_36dp.svg");
+   margin-left: auto;
+}

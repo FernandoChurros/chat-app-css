@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+   <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/base.css">
+   <link rel="stylesheet" href="./css/app_chat/wrapper_app_chat.css">
+   <link rel="stylesheet" href="./css/app_chat/app_chat.css">
+   <link rel="stylesheet" href="./css/app_chat/app_chat_heading.css">
+   <link rel="stylesheet" href="./css/app_chat/app_msg.css">
 </head>
-<body>
-<!--
-  Samuel Green
-  Available to Walk
 
-  That sounds great. I’d be happy with that.
+<body style="font-family: 'Rubik', sans-serif;">
+   <main>
+      <div class="wrapper_app_chat">
+         <div class="ornamento_top"></div>
+         <div class="app_chat">
+            <div class="app_chat_heading">
+               <div class="heading_infos">
+                  <img class="heading_avatar" src="./images/avatar.jpg" alt="">
 
-  Could you send over some pictures of your dog, please?
+                  <div>
+                     <span class="name_heading">Samuel Green</span>
+                     <span class="status_heading">Available to Walk</span>
+                  </div>
+               </div>
+            </div>
 
-  Here are a few pictures. She’s a happy girl!
+            <div class="app_msg">
+               <div class="msg">
+                  <span>That sounds great. I’d be happy with that.</span>
+               </div>
+               <div class="msg">
+                  <span>Could you send over some pictures of your dog, please?</span>
+               </div>
 
-  Can you make it?
+               <div class="msg">
+                  <span>Here are a few pictures. She’s a happy girl!</span>
+               </div>
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+               <div class="msg">
+                  <span>Can you make it?</span>
+               </div>
 
-  30 minute walk
-  $29
+               <div class="msg">
+                  <span>She looks so happy! The time we discussed works. How long shall I take her out for?</span>
+               </div>
 
-  1 hour walk
-  $49
+               <div class="msg">
+                  <span>30 minute walk $129</span>
+               </div>
 
-  Type a message…
+               <div class="msg">
+                  <span>1 hour walk $149</span>
+               </div>
 
+               <div class="msg">
+                  <span>Type a message…</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <!--
   Simple booking
 
   Stay in touch with our dog walkers through the chat interface. This makes it easy to 
@@ -38,4 +79,5 @@
   your walker and book again all through the chat.
 -->
 </body>
+
 </html>

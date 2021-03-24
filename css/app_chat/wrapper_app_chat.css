@@ -1,0 +1,16 @@
+.wrapper_app_chat {
+   max-width: 500px;
+   position: relative;
+}
+
+.ornamento_top {
+   background-color: #FFF;
+   border-radius: 0 0 20px 20px;
+   width: 150px;
+   height: 40px;
+
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+}
