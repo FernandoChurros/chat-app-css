@@ -23,11 +23,11 @@
    }
 }
 
-@media screen and (min-width: 411px) and (max-width: 1000px) {
-   .wrapper_app_chat {
+/*@media screen and (min-width: 411px) and (max-width: 1000px) {*/
+   /*.wrapper_app_chat {
       margin: 3rem auto 0;
    }
-}
+}*/
 
 @media screen and (min-width: 1000px) {
    .wrapper_app_chat {
